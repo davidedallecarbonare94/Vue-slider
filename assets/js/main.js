@@ -10,7 +10,7 @@ let app = new Vue({
                     "https://images-na.ssl-images-amazon.com/images/I/81V1Ph3IQIL._AC_SY679_.jpg",
                     "https://images-na.ssl-images-amazon.com/images/I/81N8HnjtMhL._AC_SL1414_.jpg"
                 ],
-                button: "fas fa-circle"
+                button: "🔴"
             },
             methods: {
                 prev() {

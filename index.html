@@ -14,16 +14,16 @@
             <i class="fas fa-chevron-left"  @click="prev"></i>
         </div>
         <img :src="images[counter]" alt="">
+        <div class="buttons_container">
+           <div style="
+        background-color: bisque;
+        border-radius: 10px;" v-for="buttons in images">
+            {{ button }}
+        </div> 
+        </div>
+        
         <div class="next" @keyup.right="next">
             <i class="fas fa-chevron-right"  @click="next"></i>
-        </div>
-        <div class="buttons">
-            <i :class="button"></i>
-            <i :class="button"></i>
-            <i :class="button"></i>
-            <i :class="button"></i>
-            <i :class="button"></i>
-            <i :class="button"></i>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
