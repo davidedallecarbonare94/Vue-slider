@@ -9,13 +9,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="root">
+    <div id="root" @keyup.left="prev" @keyup.right="next">
         <div class="prev" @keyup.left="prev">
             <i class="fas fa-chevron-left"  @click="prev"></i>
         </div>
         <img :src="images[counter]" alt="">
         <div class="next" @keyup.right="next">
             <i class="fas fa-chevron-right"  @click="next"></i>
+        </div>
+        <div class="buttons">
+            <i :class="button"></i>
+            <i :class="button"></i>
+            <i :class="button"></i>
+            <i :class="button"></i>
+            <i :class="button"></i>
+            <i :class="button"></i>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
