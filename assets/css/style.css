@@ -1,0 +1,15 @@
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#root img{
+    height: 700px;
+    width: 450px;
+}
+#root i {
+    font-size: 3rem;
+    padding: 1.5rem;
+}
