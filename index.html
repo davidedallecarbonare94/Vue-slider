@@ -10,12 +10,12 @@
 </head>
 <body>
     <div id="root">
-        <div class="prev">
-            <i class="fas fa-chevron-left" @keyup.left="prev" @click="prev"></i>
+        <div class="prev" @keyup.left="prev">
+            <i class="fas fa-chevron-left"  @click="prev"></i>
         </div>
         <img :src="images[counter]" alt="">
-        <div class="next">
-            <i class="fas fa-chevron-right" @keyup.right="next" @click="next"></i>
+        <div class="next" @keyup.right="next">
+            <i class="fas fa-chevron-right"  @click="next"></i>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
